@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+        <title>HTMX test</title>
+    </head>
+    <body>
+        <div hx-swap="outerHTML">
+            <div><label>Name</label>: Rafi</div>
+            <button hx-get="form" class="btn btn-primary">Edit</button>
+        </div>
+    </body>
+</html>
