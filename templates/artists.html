@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<ul id="artists">
-{% for item in data %}
-    <li>{{ item }}</li>
-{% endfor %}
-</ul>
+<div hx-target="this">
+    <button hx-get="/main">Artists</button>
+    <table id="artists" class="table table-striped">
+        <tbody>
+        {% for item in data %}
+            <tr><td>{{ item }}</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
